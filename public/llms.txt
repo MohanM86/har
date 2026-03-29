@@ -1,0 +1,29 @@
+# Hår.com — Norges kunnskapsportal om hår
+
+## Om denne siden
+Hår.com er en uavhengig norsk kunnskapsportal som dekker alt om hår: stell, farging, hårvekst, hårtap, frisyrer, hårproblemer og hårfjerning. Innholdet er skrevet på norsk og rettet mot norske forbrukere.
+
+## Innhold
+- 52 ekspertartikler fordelt på 8 kategorier
+- Kategorier: Hårfarging, Hårtap, Hårvekst, Hårstell, Frisyrer, Hårproblemer, Hårfjerning, Hårkunnskap
+- Hver artikkel har FAQ-seksjon med strukturert data
+- Alle artikler har kortsvar optimalisert for featured snippets
+
+## Nøkkelartikler
+- /har-guide/ — Hår: Alt du trenger å vite (pilarsiden)
+- /hvordan-farge-haret-hjemme/ — Komplett guide til hårfarging hjemme
+- /hvorfor-mister-man-haret/ — Årsaker til hårtap og løsninger
+- /hvordan-fa-tykkere-har/ — 10 dokumenterte metoder for tykkere hår
+- /hvor-fort-vokser-har/ — Fakta om hårvekst og hastighet
+- /shampoo-balsam-fett-har/ — Velg riktig sjampo for fett hår
+- /kort-har-dame/ — Trender og inspirasjon for kort hår
+- /lus-i-haret/ — Gjenkjenn og behandle hodelus
+- /hartyper/ — Forstå din hårtype fra 1A til 4C
+- /gratt-har/ — Alt om grått hår og gråning
+
+## Teknisk
+- Nettsted: https://xn--hr-eka.com
+- Språk: Norsk bokmål (nb-NO)
+- Oppdatert: 2026
+- Sitemap: https://xn--hr-eka.com/sitemap.xml
+- Entity-index: https://xn--hr-eka.com/entity-index.json

@@ -1,0 +1,109 @@
+{
+  "@context": "https://schema.org",
+  "name": "Hår.com",
+  "url": "https://xn--hr-eka.com",
+  "description": "Norges kunnskapsportal om hår — 52 ekspertartikler om stell, farging, hårvekst, frisyrer og hårproblemer",
+  "language": "nb-NO",
+  "categories": [
+    {
+      "name": "Hårfarging",
+      "slug": "farging",
+      "articles": [
+        { "title": "Hvordan farge håret hjemme", "url": "/hvordan-farge-haret-hjemme/" },
+        { "title": "Fra mørkt til lyst hår", "url": "/fra-morkt-til-lyst-har/" },
+        { "title": "Hvordan stripe håret hjemme", "url": "/hvordan-stripe-haret-hjemme/" },
+        { "title": "Hvordan fjerne hårfarge", "url": "/hvordan-fjerne-harfarge/" },
+        { "title": "Hvilken hårfarge får deg til å se yngre ut?", "url": "/harfarge-se-yngre-ut/" },
+        { "title": "Hvorfor blir håret mørkere med alderen?", "url": "/haret-moerkere-med-alderen/" },
+        { "title": "Blonde hår", "url": "/blonde-har/" }
+      ]
+    },
+    {
+      "name": "Hårtap",
+      "slug": "hartap",
+      "articles": [
+        { "title": "Hvorfor mister man håret?", "url": "/hvorfor-mister-man-haret/" },
+        { "title": "Tynt hår menn", "url": "/tynt-har-menn/" },
+        { "title": "Kan grått hår reverseres?", "url": "/kan-gratt-har-reverseres/" },
+        { "title": "Hår i overgangsalderen", "url": "/har-overgangsalderen/" },
+        { "title": "Vitaminer mot hårtap", "url": "/vitaminer-hartap/" },
+        { "title": "Hår når man blir eldre", "url": "/har-nar-man-blir-eldre/" }
+      ]
+    },
+    {
+      "name": "Hårvekst",
+      "slug": "harvekst",
+      "articles": [
+        { "title": "Hvordan få tykkere hår", "url": "/hvordan-fa-tykkere-har/" },
+        { "title": "Hvor fort vokser hår?", "url": "/hvor-fort-vokser-har/" },
+        { "title": "Hvor mye vokser håret på en måned?", "url": "/hvor-mye-vokser-haret-maned/" },
+        { "title": "Hva gir økt hårvekst?", "url": "/okt-harvekst/" },
+        { "title": "Kan hår slutte å vokse?", "url": "/kan-har-slutte-vokse/" },
+        { "title": "Hvordan spare til langt hår", "url": "/spare-til-langt-har/" },
+        { "title": "Hvor langt kan hår bli?", "url": "/hvor-langt-kan-har-bli/" }
+      ]
+    },
+    {
+      "name": "Hårstell",
+      "slug": "stell",
+      "articles": [
+        { "title": "Shampoo og balsam for fett hår", "url": "/shampoo-balsam-fett-har/" },
+        { "title": "Saltvannsspray hår", "url": "/saltvannsspray-har/" },
+        { "title": "Klippe håret selv", "url": "/klippe-haret-selv/" },
+        { "title": "Hvordan få fyldigere hår", "url": "/fyldigere-har/" },
+        { "title": "Få håret til å legge seg", "url": "/haret-legge-seg/" },
+        { "title": "Hvor ofte klippe håret?", "url": "/hvor-ofte-klippe-haret/" },
+        { "title": "Sunt og langt hår", "url": "/sunt-og-langt-har/" }
+      ]
+    },
+    {
+      "name": "Frisyrer",
+      "slug": "frisyrer",
+      "articles": [
+        { "title": "Kort hår dame", "url": "/kort-har-dame/" },
+        { "title": "Kort hår menn", "url": "/kort-har-menn/" },
+        { "title": "Frisyrer tynt hår kvinner", "url": "/frisyrer-tynt-har-kvinner/" },
+        { "title": "Frisyrer langt hår", "url": "/frisyrer-langt-har/" },
+        { "title": "Hårklipp dame trender 2026", "url": "/harklipp-dame-trender/" },
+        { "title": "Fade hårklipp", "url": "/fade-harklipp/" },
+        { "title": "Kan gamle damer ha langt hår?", "url": "/gamle-damer-langt-har/" },
+        { "title": "Hvorfor klipper eldre damer håret kort?", "url": "/eldre-damer-kort-har/" }
+      ]
+    },
+    {
+      "name": "Hårproblemer",
+      "slug": "problemer",
+      "articles": [
+        { "title": "Lus i håret", "url": "/lus-i-haret/" },
+        { "title": "Flassete hodebunn", "url": "/flassete-hodebunn/" },
+        { "title": "Fett hår", "url": "/fett-har/" },
+        { "title": "Tørt hår", "url": "/tort-har/" },
+        { "title": "Inngrodd hår", "url": "/inngrodd-har/" },
+        { "title": "Splittet hår", "url": "/splittet-har/" }
+      ]
+    },
+    {
+      "name": "Hårfjerning",
+      "slug": "harfjerning",
+      "articles": [
+        { "title": "Fjerne kroppshår", "url": "/fjerne-kroppshaar/" },
+        { "title": "Voksing", "url": "/voksing/" },
+        { "title": "Laser hårfjerning", "url": "/laser-harfjerning/" },
+        { "title": "IPL hårfjerning hjemme", "url": "/ipl-harfjerning/" }
+      ]
+    },
+    {
+      "name": "Hårkunnskap",
+      "slug": "kunnskap",
+      "articles": [
+        { "title": "Hår — Alt du trenger å vite", "url": "/har-guide/" },
+        { "title": "Hvor mange hår har man på hodet?", "url": "/hvor-mange-har-paa-hodet/" },
+        { "title": "Hårtyper 1A til 4C", "url": "/hartyper/" },
+        { "title": "Krøllete hår", "url": "/krollete-har/" },
+        { "title": "Grått hår", "url": "/gratt-har/" },
+        { "title": "Mat for tykkere hår", "url": "/mat-for-tykkere-har/" },
+        { "title": "Hva er hår laget av?", "url": "/hva-er-har-laget-av/" }
+      ]
+    }
+  ]
+}
