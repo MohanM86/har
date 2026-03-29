@@ -22,8 +22,8 @@ Hår.com er en uavhengig norsk kunnskapsportal som dekker alt om hår: stell, fa
 - /gratt-har/ — Alt om grått hår og gråning
 
 ## Teknisk
-- Nettsted: https://xn--hr-eka.com
+- Nettsted: https://hår.com
 - Språk: Norsk bokmål (nb-NO)
 - Oppdatert: 2026
-- Sitemap: https://xn--hr-eka.com/sitemap.xml
-- Entity-index: https://xn--hr-eka.com/entity-index.json
+- Sitemap: https://hår.com/sitemap.xml
+- Entity-index: https://hår.com/entity-index.json

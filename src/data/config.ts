@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Hår.com',
   domain: 'hår.com',
-  url: 'https://xn--hr-eka.com',
+  url: 'https://hår.com',
   tagline: 'Norges kunnskapsportal om hår',
   description: 'Alt du trenger å vite om hår. Ekspertguider om hårstell, hårfarging, hårvekst, frisyrer og hårproblemer. Norges mest komplette hårkunnskap.',
   ogImage: '/og-image.jpg',
