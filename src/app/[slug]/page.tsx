@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { siteConfig, getCategoryBySlug } from '@/data/config'
-import { allArticles, getArticleBySlug, getRelatedArticles } from '@/data/index'
+import { allArticles, getArticleBySlug, getRelatedArticles, getArticlesByCategory } from '@/data/index'
 import { generateArticleJsonLd, generateFAQJsonLd, generateBreadcrumbJsonLd } from '@/lib/seo'
 import { Breadcrumbs, FAQAccordion, RelatedLinks } from '@/components/UI'
 import { ArticleSidebar } from '@/components/ArticleSidebar'
+import { ReadingProgress } from '@/components/ReadingProgress'
 
 export function generateStaticParams() {
   return allArticles.map(a => ({ slug: a.slug }))
@@ -86,6 +88,12 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     tocItems.push({ text: 'Les også', id: 'les-ogsa', level: 2 })
   }
 
+  // Prev/next articles in same category
+  const categoryArticles = getArticlesByCategory(article.categorySlug)
+  const currentIndex = categoryArticles.findIndex(a => a.slug === article.slug)
+  const prevArticle = currentIndex > 0 ? categoryArticles[currentIndex - 1] : null
+  const nextArticle = currentIndex < categoryArticles.length - 1 ? categoryArticles[currentIndex + 1] : null
+
   const breadcrumbs = [
     { name: 'Hjem', url: siteConfig.url },
     { name: article.category, url: `${siteConfig.url}/kategori/${article.categorySlug}/` },
@@ -94,6 +102,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <ReadingProgress />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(generateArticleJsonLd(article)) }}
@@ -158,8 +167,30 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             {/* Related articles */}
             <RelatedLinks articles={related} />
 
+            {/* Prev/Next navigation */}
+            {(prevArticle || nextArticle) && (
+              <div className="mt-10 pt-6 border-t border-border grid grid-cols-2 gap-4">
+                {prevArticle ? (
+                  <Link href={`/${prevArticle.slug}/`} className="group text-left">
+                    <span className="text-xs text-muted">Forrige artikkel</span>
+                    <span className="block text-sm font-medium text-ink group-hover:text-hair-700 transition-colors mt-0.5 leading-snug">
+                      ← {prevArticle.title}
+                    </span>
+                  </Link>
+                ) : <div />}
+                {nextArticle ? (
+                  <Link href={`/${nextArticle.slug}/`} className="group text-right">
+                    <span className="text-xs text-muted">Neste artikkel</span>
+                    <span className="block text-sm font-medium text-ink group-hover:text-hair-700 transition-colors mt-0.5 leading-snug">
+                      {nextArticle.title} →
+                    </span>
+                  </Link>
+                ) : <div />}
+              </div>
+            )}
+
             {/* Back to top */}
-            <div className="mt-10 pt-6 border-t border-border">
+            <div className="mt-8 pt-6 border-t border-border">
               <a href="#" className="inline-flex items-center gap-1.5 text-xs text-muted hover:text-ink transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6"/></svg>
                 Tilbake til toppen

@@ -216,10 +216,14 @@ export function TableOfContents({ content, faq }: { content: string; faq: { q: s
 
 /* ═══════ ARTICLE CARD ═══════ */
 export function ArticleCard({ article }: { article: Article }) {
+  const readTime = Math.max(2, Math.ceil(article.content.replace(/<[^>]*>/g, '').split(/\s+/).length / 200))
   return (
     <Link href={`/${article.slug}/`} className="group block">
       <article className="p-5 rounded-lg border border-border bg-white hover:border-hair-300 hover:shadow-sm transition-all duration-200">
-        <span className="text-xs text-hair-500 font-medium">{article.category}</span>
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-hair-500 font-medium">{article.category}</span>
+          <span className="text-xs text-hair-400">{readTime} min</span>
+        </div>
         <h3 className="mt-1.5 font-display font-semibold text-ink text-base group-hover:text-hair-700 transition-colors leading-snug">
           {article.title}
         </h3>
@@ -362,6 +366,15 @@ export function SearchComponent({ articles }: { articles: Article[] }) {
               <span className="block text-xs text-muted mt-0.5">{a.category}</span>
             </Link>
           ))}
+        </div>
+      )}
+      {/* No results */}
+      {focused && query.length >= 2 && results.length === 0 && (
+        <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-border rounded-lg shadow-lg overflow-hidden z-50">
+          <div className="px-4 py-6 text-center">
+            <p className="text-sm text-muted">Ingen resultater for "{query}"</p>
+            <p className="text-xs text-hair-400 mt-1">Prøv et annet søkeord</p>
+          </div>
         </div>
       )}
     </div>

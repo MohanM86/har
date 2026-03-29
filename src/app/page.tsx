@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { categories } from '@/data/config'
 import { allArticles } from '@/data/index'
 import { generateWebSiteJsonLd } from '@/lib/seo'
@@ -49,7 +50,12 @@ export default function HomePage() {
 
       {/* Popular articles */}
       <section className="max-w-wide mx-auto px-4 sm:px-6 pb-14">
-        <h2 className="font-display text-2xl font-semibold text-ink mb-6">Populære artikler</h2>
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="font-display text-2xl font-semibold text-ink">Populære artikler</h2>
+          <Link href="/kategori/kunnskap/" className="text-sm text-hair-600 hover:text-ink transition-colors">
+            Se alle {allArticles.length} artikler →
+          </Link>
+        </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {popular.map(article => (
             <ArticleCard key={article.slug} article={article} />

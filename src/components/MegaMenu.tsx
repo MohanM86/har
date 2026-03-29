@@ -72,7 +72,7 @@ export function MegaMenu() {
                 }`}
               >
                 <span className="[&>svg]:w-3.5 [&>svg]:h-3.5 text-hair-500" dangerouslySetInnerHTML={{ __html: categoryIcons[item.slug] || '' }} />
-                {item.name.replace('Hår', '').replace('kunnskap', 'Kunnskap').trim() || item.name}
+                {item.name}
               </Link>
             </div>
           ))}
