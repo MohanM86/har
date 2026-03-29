@@ -191,7 +191,7 @@ function MobileTOC({ tocItems }: { tocItems: { text: string; id: string; level: 
             href={`#${h.id}`}
             className={`block text-xs transition-colors ${
               h.id === 'les-ogsa'
-                ? 'text-green-700 font-semibold hover:text-green-900'
+                ? 'text-hair-600 font-semibold hover:text-hair-800'
                 : h.level === 3
                   ? 'pl-4 text-muted hover:text-ink'
                   : 'text-muted font-medium hover:text-ink'

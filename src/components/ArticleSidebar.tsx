@@ -55,8 +55,8 @@ export function ArticleSidebar({ tocItems }: { tocItems: TOCItem[] }) {
                       isLesOgsa
                         ? `text-xs font-semibold pl-3 py-1.5 border-l-2 -ml-px ${
                             isActive
-                              ? 'border-green-600 text-green-800'
-                              : 'border-green-400 text-green-700 hover:text-green-900'
+                              ? 'border-hair-600 text-hair-800'
+                              : 'border-hair-400 text-hair-600 hover:text-hair-800'
                           }`
                         : isSection
                           ? `text-xs font-medium pl-3 py-1.5 border-l-2 -ml-px ${
